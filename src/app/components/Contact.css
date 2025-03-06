@@ -63,6 +63,7 @@
 
 .form-group input,
 .form-group textarea {
+  font-family: "Martel";
   margin: 0 0 20px 0;
   color: var(--text-color);
   background: var(--modal-gradient);
