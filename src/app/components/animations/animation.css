@@ -78,7 +78,7 @@ section {
 
 .first {
   .bg {
-    background-image: var(--linear-gradient), url('/CoverMountains.jpg');
+    background-image: var(--linear-gradient), url(/CoverMountains.jpg);
   }
 }
 
