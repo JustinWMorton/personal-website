@@ -1,0 +1,96 @@
+.bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Ensure it respects the z-index */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+#contact-me-header {
+  z-index: 3; /* Ensure this is higher than the modal */
+  position: relative; /* Ensure it respects the z-index */
+  height: 85%;
+  margin-bottom: 20px; /* Add some margin to position it above the modal */
+}
+
+.clip-text {
+  overflow: hidden;
+}
+
+.contact-me-modal {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%; /* 20% space on the left and right sides */
+  height: 60%; /* 30% space on the top and bottom */
+  background: var(--modal-gradient); /* Use the same --linear-gradient as the background images */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  /* padding: 20px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Ensure this is lower than the section-heading */
+}
+
+.contact-form {
+  position: relative;
+  width: 80%;
+  top: 40px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin: 10px 0 0 0;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+  margin: 0 0 20px 0;
+  color: var(--text-color);
+  background: var(--modal-gradient);
+  border: none;
+  border-radius: 15px;
+  width: 80%;
+  padding: 10px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--text-color); /* Change border color on focus */
+  outline: var(--text-color); /* Remove default outline */
+}
+
+
+.submit-button {
+  margin: 20px 0 0 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: var(--button-text-color);
+  background-color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}

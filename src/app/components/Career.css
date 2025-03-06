@@ -1,0 +1,89 @@
+.bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Ensure it respects the z-index */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+#career-header {
+  z-index: 3; /* Ensure this is higher than the modal */
+  position: relative; /* Ensure it respects the z-index */
+  height: 90%;
+  margin-bottom: 20px; /* Add some margin to position it above the modal */
+}
+
+.career-logo-wrapper {
+  margin: 0 0 0 100px;
+}
+
+.clip-text {
+  overflow: hidden;
+}
+
+.career-modals-wrapper {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 75%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between the modals */
+  z-index: 1; /* Ensure this is lower than the section-heading */
+}
+
+.career-modal {
+  width: 70%; /* 20% space on the left and right sides */
+  height: 100%; /* Adjust the height to make the modals slimmer */
+  background: var(--modal-gradient); /* Use the same --linear-gradient as the background images */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.career-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 0 20px 0;
+}
+
+.career-text-wrapper {
+  margin: 0 0 0 -10px;
+}
+
+.career-header-text {
+  bottom: 0 !important;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+.career-time-text {
+  font-family: "Martel";
+  text-transform: none;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: light;
+  color: var(--text-color);
+}
+
+.career-text {
+  font-family: "Martel";
+  text-transform: none;
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  font-weight: light;
+  color: var(--text-color);
+  margin: 10px 0 0 0;
+}

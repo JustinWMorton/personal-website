@@ -1,0 +1,81 @@
+.bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Ensure it respects the z-index */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+#about-me-header {
+  z-index: 3; /* Ensure this is higher than the modal */
+  position: relative; /* Ensure it respects the z-index */
+  height: 85%;
+  margin-bottom: 20px; /* Add some margin to position it above the modal */
+}
+
+.clip-text {
+  overflow: hidden;
+}
+
+.about-me-modal {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%; /* 20% space on the left and right sides */
+  height: 70%; /* 30% space on the top and bottom */
+  background: var(--modal-gradient); /* Use the same --linear-gradient as the background images */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  /* padding: 20px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Ensure this is lower than the section-heading */
+}
+
+.about-me-image-wrapper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.about-me-image {
+  border-radius: 15px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-personal-wrapper,
+.about-me-prof-wrapper {
+  margin: 10px 0 10px 0;
+}
+
+.about-me-personal-header-text,
+.about-me-prof-header-text {
+  bottom: 0 !important;
+  margin: 20px 0 10px 0;
+}
+
+.about-me-personal-text,
+.about-me-prof-text {
+  margin: 10px 0 10px 0;
+  font-family: "Martel";
+  text-transform: none;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: light;
+  margin: 10px 0 10px 0;
+  color: var(--text-color);
+}
