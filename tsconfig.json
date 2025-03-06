@@ -19,6 +19,7 @@
       }
     ],
     "paths": {
+      "@/gsap/*": ["./src/gsap-plugins/*"],
       "@/app/*": ["./src/app/*"],
       "@/components/*": ["./src/app/components/*"],
     }

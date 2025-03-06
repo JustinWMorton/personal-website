@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@web3forms/react": "^1.1.3",
-    "gsap": "file:gsap-bonus.tgz",
+    "gsap": "npm:@gsap/shockingly@^3.12.7",
     "gsap-trial": "^3.12.7",
     "next": "15.2.1",
     "react": "^19.0.0",
