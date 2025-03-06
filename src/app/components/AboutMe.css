@@ -1,8 +1,8 @@
 .bg {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  position: relative; /* Ensure it respects the z-index */
+  position: relative; 
   height: 100%;
   width: 100%;
   top: 0;
@@ -13,8 +13,22 @@
 #about-me-header {
   z-index: 3; /* Ensure this is higher than the modal */
   position: relative; /* Ensure it respects the z-index */
-  height: 85%;
-  margin-bottom: 20px; /* Add some margin to position it above the modal */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Add some margin to position it above the modal */
+}
+
+#about-me-header {
+  z-index: 3; /* Ensure this is higher than the modal */
+  position: absolute; /* Change to absolute positioning */
+  top: 10%; /* Adjust this value to move the header higher */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0; /* Remove margin-top */
 }
 
 .clip-text {
@@ -22,11 +36,11 @@
 }
 
 .about-me-modal {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60%; /* 20% space on the left and right sides */
+  position: relative;
+  top: 5%;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  width: 80%; /* 20% space on the left and right sides */
   height: 70%; /* 30% space on the top and bottom */
   background: var(--modal-gradient); /* Use the same --linear-gradient as the background images */
   border-radius: 15px;
@@ -38,6 +52,7 @@
   /* padding: 20px; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1; /* Ensure this is lower than the section-heading */
+  overflow-y: auto;
 }
 
 .about-me-image-wrapper {

@@ -204,7 +204,7 @@ const Animation = () => {
       onUp: () => !animating && gotoSection(currentIndex + 1, 1),
       tolerance: 10,
       preventDefault: true,
-      ignore: ".contact-form, .contact-me-modal input, .contact-me-modal textarea"
+      ignore: ".contact-form, .contact-me-modal input, .contact-me-modal textarea, .about-me-modal"
     });
     
     gotoSection(0, 1);
