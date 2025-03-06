@@ -76,12 +76,6 @@ section {
   transform: translateX(-50%);
 }
 
-.first {
-  .bg {
-    background-image: var(--linear-gradient), url(/CoverMountains.jpg);
-  }
-}
-
 .second {
   .bg {
     background-image: var(--linear-gradient), url(/CoverPool.jpg);

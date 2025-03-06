@@ -24,6 +24,12 @@
   }
 }
 
+.first {
+  .bg {
+    background-image: var(--linear-gradient), url(/CoverMountains.jpg);
+  }
+}
+
 .language-logos {
   display: flex;
   justify-content: center;
