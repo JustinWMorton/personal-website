@@ -11,5 +11,13 @@
       "src": "/(.*)",
       "dest": "/"
     }
-  ]
+  ],
+  "env": {
+    "GSAP_TOKEN": "8715960c-6b7f-44f1-957a-1e96f2df7e5c"
+  },
+  "build": {
+    "env": {
+      "GSAP_TOKEN": "8715960c-6b7f-44f1-957a-1e96f2df7e5c"
+    }
+  }
 }
