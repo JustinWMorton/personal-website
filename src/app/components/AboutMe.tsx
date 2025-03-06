@@ -38,9 +38,9 @@ const AboutMe = () => {
                   </p>
                 </div>
                 <div className="about-me-image-wrapper">
-                  <Image src="/Wally.jpg" alt="Wally" className="about-me-image" width={250} height={150} />
-                  <Image src="/Peach.jpg" alt="Wally" className="about-me-image" width={250} height={150} />
-                  <Image src="/Milo.jpg" alt="Wally" className="about-me-image" width={250} height={150} />
+                  <Image src="/Wally.JPG" alt="Wally" className="about-me-image" width={250} height={150} />
+                  <Image src="/Peach.JPG" alt="Wally" className="about-me-image" width={250} height={150} />
+                  <Image src="/Milo.JPG" alt="Wally" className="about-me-image" width={250} height={150} />
                 </div>
               </div>
               <ReactSVG src="/scroll-arrow.svg" className="scroll-arrow" />
